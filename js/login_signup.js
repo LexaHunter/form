@@ -105,7 +105,7 @@ formLogin.addEventListener("submit", function(event) {
         password = formLogin.elements["password"].value,
         logged = false;
     
-    if (getCookie(nombreUsuario) == password) {
+    if (getCookie(nombreUsuario) == sha256(password)) {
         logged = true;
         setCookie("user", nombreUsuario, "/");
         alert("¡Bienvenido/a ".concat(nombreUsuario, "!"));
@@ -126,7 +126,7 @@ formSignup.addEventListener("submit", function(event) {
     
     var nombreUsuario = formSignup.elements["nombre"].value;
     
-    setCookie(nombreUsuario, password.value, "/", 365);
+    setCookie(nombreUsuario, sha256(password.value), "/", 365);
     
     setCookie("user", nombreUsuario, "/");
     
