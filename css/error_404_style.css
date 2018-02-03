@@ -1,0 +1,22 @@
+* {
+  margin: 0 auto; }
+
+#error_404 {
+  padding: 10% 0;
+  background-image: url("../images/fondo_acuarela.jpg"); }
+  #error_404 > div {
+    text-align: center; }
+    #error_404 > div > :first-child {
+      font-size: 5em; }
+    #error_404 > div > :nth-child(2) {
+      line-height: 1em;
+      font-size: 12em; }
+    #error_404 > div > :nth-child(3) {
+      font-size: 3em;
+      font-weight: bold; }
+    #error_404 > div .button {
+      width: 70%;
+      font-size: 1.3em;
+      margin-top: 3em; }
+
+/*# sourceMappingURL=error_404_style.css.map */

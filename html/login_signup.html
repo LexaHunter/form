@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>New Brand</title>
+        <meta name="author" content="Gema de la Fuente Romero, Paz Rubio Rubio y Álvar Ruiz Tavira" />
+        <link rel="stylesheet" type="text/css" media="all" href="../css/normalize.css" />
+        <!--<link rel="stylesheet" type="text/css" media="all" href="960-Grid-System-master/code/css/reset.css" />-->
+        <link rel="stylesheet" type="text/css" media="all" href="../css/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../css/960.css" />
+        <link rel="stylesheet" type="text/css" href="../css/escaparate_style.css" />
+    </head>
+    <body>
+        <div id="content" class="container_12">
+            
+            <!-- Encabezado -->
+            <header>
+                
+                <!-- Primera Fila del Encabezado -->
+                <div class="grid_2 suffix_8"><div class="button"><a href="">Suscríbete a nuestra Newsletter</a></div></div>
+                
+                <div class="grid_2"><div class="button"><a href="">Regístrate / Inicia Sesión</a></div>
+                </div>
+                
+                <div class="clear"></div>
+                
+                <!-- Segunda Fila del Encabezado -->
+                <div class="grid_8 prefix_2 suffix_2">
+                    <div id="logo_encabezado"><a href="../index.html">New Brand</a></div>
+                </div>
+                
+                <div class="clear"></div>
+                
+                <!-- Tercera Fila del Encabezado -->
+                <!-- Menú -->
+                <div class="grid_6 prefix_3">
+                    <nav>
+                        <div class="button"><a href="">Hombre</a></div>
+                        <div class="button"><a href="">Mujer</a></div>
+                        <div class="button"><a href="">Niño/Niña</a></div>
+                    </nav>
+                </div>
+                <!-- Barra de Búsqueda -->
+                <div class="grid_3">
+                    <form id="search">
+                        <label for="search_bar"><img src="../icons/search.svg" alt="" /></label>
+                        <input type="search" name="search_bar" id="search_bar" placeholder="Búsqueda">
+                    </form>
+                </div>
+                
+                <div class="clear"></div>
+                
+            </header>
+            
+            <!-- Principal -->
+            <main>
+                <div class="prefix_3 grid_6 suffix_3">
+                    
+                    <!-- Formulario de Suscripción -->
+                    <article id="login_signup">
+                        
+                        <!--<ul id=menu>
+                            <li id="login" class="active">Inicia Sesión</li>
+                            <li id="signup">Regístrate</li>
+                        </ul>-->
+                        
+                        <article class="tab">
+                            <button id="login_button" class="tablink active" onclick="mostrar(event, 'login_article')">Inicia Sesión</button>
+                            <button id="signup_button" class="tablink" onclick="mostrar(event, 'signup_article')">Regístrate</button>
+                        </article>
+                        
+                        <article id="login_article" class="form_frame tab_content">
+                            <form id="form_login" action="../index.html" method="post">
+                                <div>
+                                    <h3>Inicia Sesión con tu Nombre de Usuario y Contraseña</h3>
+                                </div>
+                                <!--<div>-->
+                                <div>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre de Usuario" required="required" /> 
+                                </div>
+                                <div>
+                                    <input type="password" id="password" name="password" placeholder="Contraseña" required="required" /> 
+                                </div>
+                                <div>
+                                    <input type="submit" id="login" name="login" value="Accede" /> 
+                                </div>
+                                <!--</div>-->
+
+                                <div class="clear"></div>
+                            </form>
+                        </article>
+                        
+                        <article id="signup_article" class="form_frame tab_content">
+                            <form id="form_signup" name="form_signup" action="../index.html" method="post">
+                                <div>
+                                    <h3>Regístrate usando tu Dirección de Correo</h3>
+                                </div>
+                                <!--<div>-->
+                                <div>
+                                    <input type="text" id="nombre" name="nombre" required="required" placeholder="Nombre" /> 
+                                </div>
+                                <div>
+                                    <input type="text" id="apellidos" name="apellidos" required="required" placeholder="Apellidos" /> 
+                                </div>
+                                <div>
+                                    <input type="email" id="correo" name="correo" required="required" placeholder="Correo Electrónico" required="required" />
+                                </div>
+                                <div>
+                                    <input type="password" id="password" name="password" required="required" placeholder="Contraseña" /> 
+                                </div>
+                                <div>
+                                    <input type="password" id="password_conf" name="password_conf" required="required" placeholder="Confirma la Contraseña" /> 
+                                </div>
+                                <div>
+                                    <label for="hombre">Hombre</label>
+                                    <input type="radio" id="hombre" name="sexo" />
+                                    <label for="hombre">Mujer</label>
+                                    <input type="radio" id="mujer" name="sexo" /> 
+                                </div>
+                                <div>
+                                    <label for="fecha_nac">Fecha de Nacimiento: </label>
+                                    <input type="date" id="fecha_nac" name="fecha_nac" /> 
+                                </div>
+                                <div>
+                                    <input type="text" id="direccion" name="direccion" placeholder="Dirección" /> 
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="pais">País:</label>
+                                    </div>
+                                    <div>
+                                        <select name="pais" id="pais">
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <!--<div>
+                                    <label for="visa">Visa</label>
+                                    <input type="radio" id="visa" name="tarjeta" />
+                                    <label for="mastercard">MasterCard</label>
+                                    <input type="radio" id="mastercard" name="tarjeta" />
+                                    <label for="americanexpress">American Express</label>
+                                    <input type="radio" id="americanexpress" name="tarjeta" />
+                                </div>-->
+                                <div id="contenedor_tarjeta" class="hidden">
+                                    <div>
+                                        <input type="text" id="num_tarjeta" name="num_tarjeta" placeholder="Número de Tajeta de Crédito" /> 
+                                    </div>
+                                    <div>
+                                        <label for="visa">Visa</label>
+                                        <input type="radio" id="visa" name="marca_tarjeta" checked="checked" />
+                                        <label for="mastercard">MasterCard</label>
+                                        <input type="radio" id="mastercard" name="marca_tarjeta" />
+                                        <label for="americanexpress">American Express</label>
+                                        <input type="radio" id="americanexpress" name="marca_tarjeta" />
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="newsletter">Suscríbete a nuestra Newsletter</label>
+                                    <input type="checkbox" id="newsletter" name="newsletter" checked="checked" />
+                                </div>
+                                <div>
+                                    <input type="submit" id="enviar" name="enviar" value="Enviar" /> 
+                                </div>
+                                <!--</div>-->
+
+                                <div class="clear"></div>
+                            </form>
+                        </article>
+                        
+                    </article>
+                </div>
+                
+                <div class="clear"></div>
+                
+            </main>
+            
+            <!-- Pie -->
+            <footer>
+                
+                <!-- Batería de Enlaces -->
+                <div class="grid_12">
+                    <section id="enlaces_pie">
+                        <article>
+                            <h3><a href="">Suscríbete</a></h3>
+                            <h3>Colecciones</h3>
+                            <ul>
+                                <li><a href="">Hombre</a></li>
+                                <li><a href="">Mujer</a></li>
+                                <li><a href="">Niño/Niña</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>Conócenos</h3>
+                            <ul>
+                                <li><a href="">Encuentra tu Tienda</a></li>
+                                <li><a href="">Información Corporativa</a></li>
+                                <li><a href="">Privacidad y Términos Legales</a></li>
+                                <li><a href="">Trabaja con Nosotros</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>¿Tienes alguna duda?</h3>
+                            <ul>
+                                <li><a href="">Ayuda</a></li>
+                                <li><a href="">Envíos</a></li>
+                                <li><a href="">Devoluciones</a></li>
+                                <li><a href="">Estado de tu Pedido</a></li>
+                                <li><a href="">Contáctanos</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+                
+                <div class="clear"></div>
+                
+                <!-- Enlaces a Redes Sociales -->
+                <div class="grid_6 prefix_3 suffix_3">
+                    <article id="contenedor_redes">
+                        <h3>Síguenos en:</h3>
+                        <div id="redes">
+                            <div><a href=""><img src="../icons/facebook.svg" alt="Facebook" /></a></div>
+                            <div><a href=""><img src="../icons/twitter.svg" alt="Twitter" /></a></div>
+                            <div><a href=""><img src="../icons/instagram.svg" alt="Instagram" /></a></div>
+                            <div><a href=""><img src="../icons/youtube.svg" alt="YouTube" /></a></div>
+                            <div><a href=""><img src="../icons/pinterest.svg" alt="Pinterest" /></a></div>
+                            <div><a href=""><img src="../icons/google_plus.svg" alt="Google+" /></a></div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="clear"></div>
+                
+                <!-- Logo -->
+                <div class="grid_4 prefix_4 suffix_4">
+                    <p id="logo_pie">
+                        <a href="../index.html">New Brand</a>
+                    </p>
+                </div>
+                
+                <div class="clear"></div>
+                
+            </footer>
+        </div>
+        
+        <script type="application/javascript" src="../js/paises.js"></script>
+        <script type="application/javascript" src="../js/cookie.js"></script>
+        <script type="application/javascript" src="../js/login_signup.js"></script>
+        <script type="application/javascript" src="../js/jquery-3.2.1.js"></script>
+        
+    </body>
+</html>
