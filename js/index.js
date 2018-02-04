@@ -10,7 +10,7 @@ window.addEventListener("load", function(event) {
         //linkRightButton.setAttribute("id", "logout");
         linkLeftButton.setAttribute("href", "");
         linkLeftButton.innerHTML = "\ud83d\udc64\t".concat(logged);
-        linkRightButton.setAttribute("onclick", "deleteCookie('user', '/')");
+        linkRightButton.setAttribute("onclick", "deleteCookie('user')");
         linkRightButton.setAttribute("href", "");
         linkRightButton.innerHTML = "Cerrar Sesión";
     } else {

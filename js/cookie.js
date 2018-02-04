@@ -23,8 +23,8 @@ function setCookie(nombreCookie, valor, ruta, diasExpirar = 0) {
     
 }
 
-function deleteCookie(nombreCookie, ruta) {
+function deleteCookie(nombreCookie) {
     
-    setCookie(nombreCookie, "", ruta, -1);
+    setCookie(nombreCookie, "", "/", -1);
     
 }
